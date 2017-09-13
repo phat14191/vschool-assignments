@@ -1,0 +1,33 @@
+body {
+  font-size: 32px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 1.3em;
+  }
+
+}
+
+.box {
+  height: 500px;
+  width: 50%;
+  background-color: wheat;
+  border: 1px solid blue;
+  display: inline-block;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .box {
+    background-color: rebeccapurple;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box {
+    background-color: lawngreen;
+    height: 100%;
+  }
+}

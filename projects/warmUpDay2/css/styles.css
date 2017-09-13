@@ -1,0 +1,15 @@
+.backgroundAll {
+  background-color: AliceBlue;
+}
+
+#dog {
+  display: inline-block;
+}
+
+.lead {
+  text-align: center;
+}
+
+#listAllKind {
+  text-align: center;
+}

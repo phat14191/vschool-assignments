@@ -1,0 +1,29 @@
+.parent {
+  background-color: red;
+  width: 1000px;
+  height: 500px;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  background-color: wheat;
+}
+
+.box2 {
+  height: 50%;
+  width: 50%;
+  background-color: green;
+}
+
+@media (min-width: 800px) {
+  .box {
+    background-color: rebeccapurple;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box {
+    background-color: lawngreen;
+  }
+}
