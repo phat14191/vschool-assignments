@@ -135,6 +135,7 @@ function playerAttacts() {
   enemyDamage = Math.floor(player.strength * Math.random());
   enemyIs.hp = enemyIs.hp - enemyDamage;
   console.log("You attacked " + enemyIs.name + " for " + enemyDamage + " damage! " + enemyIs.name + " has " + enemyIs.hp + " HP left!!! ");
+  
 };
 
 function enemyAttacts() {

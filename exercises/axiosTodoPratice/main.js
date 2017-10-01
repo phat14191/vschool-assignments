@@ -4,7 +4,7 @@ document.getElementById("button").addEventListener("click", function (){
     var description = document.right.description.value;
     var newList = document.getElementById("todoDisplay");
     var newItem = new TodoListItem(title, price, description);
-    axios.post("https://api.vschool.io/phat/todo", newList).then(function(response){
+    axios.post("https://api.vschool.io/phat/todo", newItem).then(function(response){
       console.log(newItem);
     });
 });
