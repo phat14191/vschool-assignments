@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Axios</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+            <div>
+              <br>
+                <button id="listButton">List all items on server</button><br>
+              <br>
+                <button id="button">Button</button></div>
+            <form name="right">
+              <br>
+                <input name="toDoText" type="input" placeholder="New ToDo Item"> <br>
+                <input name="price" type="input" placeholder="How much will it cost?"> <br>
+                <textarea name="description" name="Description" placeholder="Enter your description here    Please." id="" cols="23" rows="3"></textarea>
+
+            </form>
+
+        <div class="row">
+            <div id="displayText" class="col-md-6">
+                <div class="theSpot">
+                    <ul id="todoDisplay"> List Items
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

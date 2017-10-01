@@ -1,0 +1,14 @@
+h1.header {
+  text-align: center;
+  font-size: 4em;
+}
+
+form.input {
+  text-align: center;
+}
+
+div.list {
+  width: 25%;
+  margin: auto;
+  text-align: left;
+}

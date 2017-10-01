@@ -19,46 +19,35 @@ var Enemies = ["Lex",
                 "Doomsday"];
 
   var clarkKent = true;
-  var superman = false;
+  var superMan = false;
 
-function WhoWins (isThereKryptonite, enemyName) {
+function whoWins (isThereKryptonite, enemyName) {
   if (isThereKryptonite === enemyName){
     return "Superman beats " + enemyName + ", of course";
-    }
-
-  else (isThereKryptonite !== enemyName)
-  {
+  } else if (isThereKryptonite !== enemyName) {
     return "Depends on how quick Superman can get rid of the Kryptonite. " + enemyName + " could possibly win this one.";
   }
+  console.log (whoWins (isThereKryptonite, enemies[i]));
 };
 
-for ( var i = 0; i <= Enemies.length; i++ )
-{
-    if ( i % 2 = 0) {
 
-    console.log (WhoWins (isThereKryptonite, Enemies[i]));
-}
-
-function HowAttractedIsLoisLaneToMe()
-
-{
-    // 1 is not at all attracted, 10 is "super" attracted...
-    return Math.floor((Mat.random() * 10) + 1);
-}
-
-consol.log( HowAttractedIsLoisLaneToMe());
-
-
-
-  while (clarkKent = true) {
-    console.log ("I'm just a nerdy columnist");
+function howAttractedIsLoisLaneToMe(enemies) {
+  for ( var i = 0; i < enemies[i].length; i++ ) {
+    if ( i % 2 === 0) {
+      // 1 is not at all attracted, 10 is "super" attracted...
+      return Math.floor((Math.random() * 10) + 1);
+    }
   }
-    var phoneBoothQuickChange = Math.random();
-    if ( phoneBoothQuickChange >= 0.5) {
-        clarkKent === false;
-      }
+  console.log(howAttractedIsLoisLaneToMe(enemies));
+};
 
-        superman === true;
-        console.log("Now I'm Superman!");
-      }
-      }
+while (clarkKent === true) {
+  console.log ("I'm just a nerdy columnist");
+  var phoneBoothQuickChange = Math.random();
+  if ( phoneBoothQuickChange >= 0.5) {
+    clarkKent = false;
+  } else {
+    superman = true;
+    console.log("Now I'm Superman!");
+  }
+}

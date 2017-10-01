@@ -1,0 +1,10 @@
+body h1 {
+  margin-left: 880px;
+  margin-top: 250px;
+  font-size: 200px;
+}
+
+body #output {
+  margin-left: 350px;
+  font-size: 50px;
+}

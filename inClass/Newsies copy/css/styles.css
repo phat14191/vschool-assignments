@@ -1,0 +1,36 @@
+#fontTitle {
+  font: italic;
+}
+
+p {
+  display: inline;
+  padding: 100px;
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  margin-top: 30px;
+  width: 275px;
+  display: inline-block;
+}
+
+#img1 {
+  height: 300px;
+}
+
+#img2 {
+  height: 350px;
+}
+
+#img3 {
+  height: 400px;
+}
+
+.image {
+  display: inline-block;
+  float: right;
+}

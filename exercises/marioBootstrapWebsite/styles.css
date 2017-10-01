@@ -1,0 +1,53 @@
+* {
+  margin: 0px;;
+  margin-top: -2px;
+}
+
+@font-face {
+   font-family: mario;
+   src: url(font/SuperMario256.ttf);
+}
+
+body h1, body h2 {
+  font-family: mario;
+  color: red;
+}
+
+body h2 {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.luigi h1 {
+  padding-top: 28px;
+  padding-left: 28px;
+}
+
+.red{
+  background-color: red;
+  padding-right: 10px;
+  position: relative;
+}
+.luigi {
+  background-color: yellow;
+  height: 100px;
+}
+
+footer {
+  background-color: yellow;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+}
+
+.musroom {
+  padding-top: 25px;
+  max-height: 100px;
+  padding-right: 25px;
+}
+
+img.center {
+  margin-left: 820px;;
+}

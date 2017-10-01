@@ -1,0 +1,22 @@
+[
+    {
+        "appetizers" : "salad rolls",
+        "cold sandwiches" : "cold pepper",
+        "desserts" : "cream cheese",
+        "website" : "www.vschool.io"
+
+    },
+    {
+        "appetizers" : "spring rolls",
+        "cold sandwiches" : "american cheese",
+        "desserts" : "watermelon",
+        "website" : "www.vschool.io"
+
+    },
+    {
+        "appetizers" : "rice cake",
+        "cold sandwiches" : "cheese only",
+        "desserts" : "rashberry",
+        "website" : "www.vschool.io"
+    }
+]
