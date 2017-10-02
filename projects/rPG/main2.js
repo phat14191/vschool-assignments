@@ -116,7 +116,7 @@ function isRunSuccessful() {
   if (ranNum === 0) {
     console.log("You got away, but your dignity didn't ");
   } else if (ranNum === 1) {
-    console.log("If you're lucky ")
+    console.log("Combat enemy")
     combat(enemyIs);
   };
 };
@@ -127,15 +127,21 @@ function combat(enemy) {
     if(enemyIs.hp <= 0) {
       console.log(enemyIs.name + " has been defeated! Great work, " + player.name);
       gainSpoils();
+      break
+    };
+    enemyAttacts();
+    if (player.hp <= 0) {
+      console.log(enemiIs.name + " Killed you, thanks for play the game " + player.name + " .Game Over");
+      isPlayerAlive = false;
     };
   };
+  battleReset();
 };
 
 function playerAttacts() {
   enemyDamage = Math.floor(player.strength * Math.random());
   enemyIs.hp = enemyIs.hp - enemyDamage;
   console.log("You attacked " + enemyIs.name + " for " + enemyDamage + " damage! " + enemyIs.name + " has " + enemyIs.hp + " HP left!!! ");
-  
 };
 
 function enemyAttacts() {
@@ -154,14 +160,21 @@ function gainSpoils() {
   console.log(player.name + " so the " + enemyIs.name + " droped " + enemyIs.inventory + ", gained " + enemyIs.exp + " exp, and " + enemyIs.giftHP + " HP for splaying " + enemyIs.name + ".\n" + player.name + " now has " + player.hp + " HP, " + player.strength + " strength, and " + player.exp + " experience. \n")
 };
 
+function battleReset() {
+  player.strength = Math.floor(player.exp * 0.2) + 7;
 
+  pokemon.hp = 5;
+  pokemon.strength++;
+  pokemon.giftHP++;
 
+  squirtle.hp = 7;
+  squirtle.strength++;
+  squirtle.giftHP++;
 
-
-
-
-
-
+  charmander.hp = 10;
+  charmander.strength++;
+  charmander.giftHP++;
+};
 
 
 
