@@ -97,7 +97,8 @@ console.log(peopleWhoBelongToTheIlluminati([
   ])
 );
 
-//
+//ES6
+// 5) Filter out all the people who are not old enough to see 'The Matrix' (18)
 const ofAge = arr => {
     const ageChecker = arr.filter((person) => {
         return person.age >= 18;
