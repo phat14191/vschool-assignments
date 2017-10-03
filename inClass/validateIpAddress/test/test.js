@@ -1,7 +1,7 @@
 const chai = require("chai");
 const assert = chai.assert;
 
-const test = "../main.js";
+const validateIP = require("../main.js");
 
 describe("An IP address", function() {
   it("should have 3 periods", function() {
