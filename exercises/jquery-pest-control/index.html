@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="container">
+    <h1>Mario Pest Control</h1>
+    <div class="container-fluid jumbotron">
+      <h2>GOOMBA</h2>
+  		<div class="baddie"><img src="http://vignette3.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en" class="img-thumbnail">
+  		</div>
+  		<div class="userEntry">
+  			<input type="text" class="myText" placeholder="       5 Per Unit" id="goomba-amount" />
+  		</div>
+  		<div>
+  			<button class="btn btn-primary" id="goombabutton">Price: </button>
+  		</div>
+  		<div id="goombaEntry"></div>
+  	</div>
+
+    <div class="container-fluid jumbotron">
+      <h2>BOBOMB</h2>
+  		<div class="baddie"><img src="https://www.mariowiki.com/images/thumb/9/9e/Bobomb_-_MarioPartyStarRush.png/200px-Bobomb_-_MarioPartyStarRush.png" class="img-thumbnail">
+  		</div>
+  		<div class="userEntry">
+  			<input type="text" class="myText" placeholder="       7 Per Unit" id="bob-omb-amount" />
+  		</div>
+  		<div>
+  			<button class="btn btn-primary" id="bobbutton">Price: </button>
+  		</div>
+  		<div id="bobEntry"></div>
+  	</div>
+
+    <div class="container-fluid jumbotron">
+      <h2>CHEEP-CHEEP</h2>
+  		<div class="baddie"><img src="https://www.mariowiki.com/images/thumb/b/b0/SpinyCheepNSMBU.png/200px-SpinyCheepNSMBU.png" class="img-thumbnail">
+  		</div>
+  		<div class="userEntry">
+  			<input type="text" class="myText" placeholder="      11 Per Unit" id="cheep-cheep-amount" />
+  		</div>
+  		<div>
+  			<button class="btn btn-primary" id="cheepbutton">Price: </button>
+  		</div>
+  		<div id="cheepEntry"></div>
+  	</div>
+
+    <!-- final -->
+    <div class="total-price">
+  		<button class="btn btn-primary btn-lg btn-block" id="finalhaul">Final Price: </button>
+  		<div id="total-total">
+  		</div>
+  	</div>
+
+    <footer>Contact Mario: mario@gmail.com
+  		<br>www.mushroomMario.net
+  		<br>Luigi's Mansion: 123 Rainbow Road
+  	</footer>
+    <p>
+  		<button class="btn" id="nightorday">Night Viewing</button>
+  	</p>
+    <!-- audio -->
+    <audio id="coinsound">
+  		<source src="sounds/smw_coin.wav">
+  	</audio>
+    <audio id="pipedown"
+    src="sounds/smb_pipe.wav">  
+    </audio>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
