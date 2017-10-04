@@ -1,31 +1,67 @@
-// constructor function and use the new keyword to instantiate the parties)
-class obj {
-  constructor(name, parties, population, isSurvive) {
-    this.name = name;
-    this.parties = parties;
-    this.population = population;
-    this.isSurvive = isSurvive;
+  //empty ready to push
+var parties = [];
+var firstAttack = "";
+var secondAttack = "";
+var partyAttacking = "";
+var attacked = "";
+
+//create constructor name and population
+class Party{
+  constructor(name, population) {
+    this.Name = name;
+    this.Population = population;
   }
 }
 
-var penguins = new obj("Penguin", "Peace", 1000000, true);
-var communists = new obj("Communist", "War", 1000000, true);
+  //creat two parties
+var penguins = new Party("Penguins", 1000000);
+var communist = new Party("Communist", 1000000);
 
-console.log(penguins);
-console.log(communists);
+  //push
+parties.push(penguins);
+// console.log(parties);
+parties.push(communist);
+// console.log(parties);
 
-// random 1 or 2 who will attack first
+console.log("They are " + parties[0].Population + " " + parties[0].Name + " and " + parties[1].Population + " " + parties[1].Name + " to begin the WAR!!!.")
+console.log("");
+
+// function random whos attack first
 function flipCoin() {
-  var ranNum = Math.floor((Math.random() * 2) + 1);
-  if (ranNum === 1) {
-    //the Penguin attact first
-    //function attact();
-  } else if (ranNum === 2) {
-    // the Communist attact
+  var coin = Math.random();
+  if(coin < .5) {
+    firstAttack = parties[0].Name;
+    secondAttack = parties[1].Name;
+  } else {
+    firstAttack = parties[1].Name;
+    secondAttack = parties[0].Name;
   }
-};
-
-function sendNuke(party, onHit, onMiss) {
-  //1st parameter party is javascripts object
-  
+  console.log("The " + firstAttack + " will ATTACT first.")
+  // sendNuke(party, onHit, onMiss);
 }
+//repeat change to atack
+flipCoin();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
