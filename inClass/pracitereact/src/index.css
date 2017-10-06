@@ -7,13 +7,17 @@
 .card {
   height: 300px;
   border: 2px solid #444444;
-
   margin: 0 20px 20px;
   padding: 20px;
   padding-bottom: 300px;
 }
 
-h1, h3 {
+h1, h3, h2 {
   text-align: center;
   position: relative;
+}
+
+img {
+  width: 350x;
+  height: 350px;
 }

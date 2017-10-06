@@ -1,0 +1,32 @@
+[
+  {
+  "place": "Meridian, Idaho",
+  "price": "$40",
+  "timeToGo": "Spring",
+  "img":"https://www.transat.com/getmedia/3f826a07-ccf1-4069-ace4-879d609b11f9/Mexico-CancunQuai-2050x1200?width=1400"
+  },
+  {
+    "place": "Cancun",
+    "price": "$900",
+    "timeToGo": "Winter",
+    "piture": "https://www.transat.com/getmedia/3f826a07-ccf1-4069-ace4-879d609b11f9/Mexico-CancunQuai-2050x1200?width=1400"
+  },
+  {
+    "place": "China",
+    "price": "$1200",
+    "timeToGo": "Fall",
+    "piture": "https://www.transat.com/getmedia/3f826a07-ccf1-4069-ace4-879d609b11f9/Mexico-CancunQuai-2050x1200?width=1400"
+  },
+  {
+    "place": "Russia",
+    "price": "$1100",
+    "timeToGo": "Summer",
+    "piture": "https://www.transat.com/getmedia/3f826a07-ccf1-4069-ace4-879d609b11f9/Mexico-CancunQuai-2050x1200?width=1400"
+  },
+  {
+    "place": "Lebanon",
+    "price": "$400",
+    "timeToGo": "Spring",
+    "piture": "https://www.transat.com/getmedia/3f826a07-ccf1-4069-ace4-879d609b11f9/Mexico-CancunQuai-2050x1200?width=1400"
+  }
+]

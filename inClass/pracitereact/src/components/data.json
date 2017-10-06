@@ -1,0 +1,34 @@
+[
+  {
+  "place": "Meridian, Idaho",
+  "price": "$40",
+  "timeToGo": "Spring",
+  "photo":"https://buyidahorealestate-realestatewebmas.netdna-ssl.com/r/4.3.6235/images/blog/why-people-move-boise_r2_blogcontent_650.jpg"
+
+  },
+  {
+  "place": "Cancun",
+  "price": "$900",
+  "timeToGo": "Winter",
+  "photo":"http://www.tourist-destinations.com/wp-content/uploads/2011/07/Cancun-NIght.jpg"
+
+  },
+  {
+  "place": "China",
+  "price": "$1200",
+  "timeToGo": "Fall",
+  "photo":"http://4.bp.blogspot.com/-SYu_1I2hXHo/Vit0T0w7BsI/AAAAAAAAFMo/vhzgOiSAOJ8/s1600/china.jpg"
+  },
+  {
+  "place": "Russia",
+  "price": "$1100",
+  "timeToGo": "Summer",
+  "photo":"http://airpano.ru/files/Kazan-Russia/images/image1.jpg"
+  },
+  {
+  "place": "Lebanon",
+  "price": "$400",
+  "timeToGo": "Spring",
+  "photo":"http://4.bp.blogspot.com/-Xs330MmbPGk/UacGu2wvg5I/AAAAAAAAD3k/gP4bf2vKgpU/s640/Lebanon+pic.jpg"
+  }
+]
