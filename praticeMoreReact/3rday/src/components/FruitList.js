@@ -1,30 +1,16 @@
 import React from "react";
 import FruitComponent from "./FruitComponent";
+import data from "../fruit.json";
 
 function FruitList(){
-  let fruitList = [
-    {
-    fruit: "dragon fruit",
-    region: "Asian"
-    },
-    {
-    fruit: "Bean fruit",
-    region: "Asian"
-    },
-    {
-    fruit: "Coconut fruit",
-    region: "Asian"
-    }
-  ]
-  let mappedFruitList = fruitList.map(function(lists)  {
-    return <FruitComponent
-      fruit = {lists.fruit}
-      region = {lists.region}
-    />
-  })
   return (
-    mappedFruitList
-  )
-}
+    <div>
+      {data.map(function(spot) {
+        return <FruitComponent
+                spot={spot}
+                />
+      })}
+    </div>
+  )}
 
 export default FruitList;

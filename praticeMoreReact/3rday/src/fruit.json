@@ -1,13 +1,16 @@
 [ {
   "fruit": "dragon fruit",
-  "region": "Asian"
+  "region": "Asian",
+  "price": "$10"
   },
   {
   "fruit": "dragon fruit",
-  "region": "Asian"
+  "region": "Asian",
+  "price": "$50"
   },
   {
   "fruit": "dragon fruit",
-  "region": "Asian"
+  "region": "Asian",
+  "price": "$100"
   }
 ]
