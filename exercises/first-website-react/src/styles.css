@@ -1,8 +1,56 @@
-
+.navbar-container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding-top: 20px;
+    color: white;
+}
 
 .navbar-container li,
 .navbar-container ul,
 .page-title {
     display: inline-block;
     transition: all 0.2s ease-in-out;
+}
+
+
+.navbar-container li {
+    margin-left: 30px;
+}
+
+.page-title {
+    float: left;
+    margin-left: 45px;
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+.nav-links {
+    float: right;
+    margin-right: 150px;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.header-text-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text-container h1 {
+    font-size: 6em;
+}
+
+.header-text-container p {
+    font-size: 2em;
 }
