@@ -1,3 +1,8 @@
+*, ::after, ::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
 .navbar-container {
     position: absolute;
     z-index: 2;
@@ -53,4 +58,35 @@
 
 .header-text-container p {
     font-size: 2em;
+}
+
+.whole-detail {
+    width: 50%;
+    margin: 5% auto;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #DFE2E1;
+    color: #493E5B;
+}
+
+.title {
+    line-height: 1;
+    margin-bottom: 3%;
+}
+
+.title {
+    font-size: 2.6em;
+    transition: color 0.2s ease-in-out;
+}
+
+.teaser {
+  font-size: 1.9em;
+}
+
+.postDetails {
+  line-height: 1.5;
+  margin: 30px 0;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 0;
+  color: #777;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Tapadder from "./Tapadder";
-import data from "../json/tap.json"
+import data from "../json/body.json"
 
 function Tapheader(spot) {
   return (
