@@ -1,0 +1,8 @@
+
+
+.navbar-container li,
+.navbar-container ul,
+.page-title {
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
