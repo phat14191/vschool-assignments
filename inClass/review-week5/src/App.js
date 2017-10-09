@@ -1,8 +1,14 @@
 import React from "react";
+import BlogPost from "./components/BlogPost";
 
 function App() {
   return (
-    <h1>Hi</h1>
+    <div>
+      <BlogPost />
+      <BlogPost />
+      <BlogPost />
+      <BlogPost />
+    </div>
   )
 }
 
