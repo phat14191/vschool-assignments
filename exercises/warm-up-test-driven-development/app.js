@@ -10,11 +10,12 @@
 function check(str, Number) {
   //empty {} to push
   var chars = {};
-  if (Number >= 0 && str === typeof(String)) {
     //to get 3 char of str
-    var strArray = str.split("").splice(0, 3).join("");
-    return ("Front is the first 3 chars is: " + strArray);
-  }
+    let newString = str.splice(0, 3);
+    return newString.repeat(n);
+    // var strArray = str.split("").splice(0, 3).join("");
+    // return ("Front is the first 3 chars is: " + strArray);
+    console.log(frontStr("hello", 5));
 }
 
 console.log(check("hello", 5));
@@ -25,4 +26,4 @@ console.log(check("hello", 5));
 // console.log(strArray);
 // console.log(typeof("hello"));
 
-// module.export = check;
+module.export = check;
