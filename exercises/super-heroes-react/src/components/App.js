@@ -2,24 +2,31 @@ import React from "react";
 import SuperHero from "./SuperHero"
 import data from "./data.json"
 
+function genHeroes() {
+  return data.map((spot) => {
+    return <SuperHero
+            spot = {spot}
+            handleClick = {handleClick}
+           />
+  })
+}
+
+function handleClick() {
+  alert();
+}
+
 function App() {
   return (
     <div>
-      {data.map(function(spot) {
-        return <SuperHero
-              spot = {spot}
-               />
-      })
-    }
+      {genHeroes(data)}
     </div>
   )
-};
-
-
-
+}
 
 export default App;
 
+// export default App;
+//
 // function genHeroes() {
 //   return data.map((spot) => {
 //     return <SuperHero
