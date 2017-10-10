@@ -8,11 +8,15 @@ class App extends React.Component {
     this.state = {
       lemmeingsKilled: 0
     }
+    //bind dont foget where you com from so bind
+
     this.killALemming = this.killALemming.bind(this);
     this.saveALeming = this.saveALeming.bind(this);
   }
 
   killALemming() {
+    //this scope this function
+
     this.setState(prevState => {
       return {
         lemmeingsKilled: prevState.lemmeingsKilled + 1
@@ -21,6 +25,8 @@ class App extends React.Component {
   }
 
   saveALeming() {
+    //this scope this function
+
     this.setState(prevState => {
       return {
         lemmeingsKilled: prevState.lemmeingsKilled - 1
