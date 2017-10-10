@@ -3,7 +3,10 @@ import React from "react";
 function Soda(props) {
   return (
     <div>
-      <input onChange={props.handleChange} type = "text"/>
+      <input placeholder="Type your Soda"
+             value={props.value}
+             onChange={props.handleChange}
+             type = "text"/>
       <h1>{props.label}</h1>
       <button onClick={props.handleClick}>Display Text</button>
     </div>
@@ -11,3 +14,6 @@ function Soda(props) {
 }
 
 export default Soda;
+
+
+//
