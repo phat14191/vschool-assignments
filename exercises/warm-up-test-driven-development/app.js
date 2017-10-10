@@ -7,18 +7,17 @@
 //return  "front" : "" first 3 char//
 
 
-function check(str, Number) {
-  //empty {} to push
-  var chars = {};
-    //to get 3 char of str
-    let newString = str.splice(0, 3);
-    return newString.repeat(n);
-    // var strArray = str.split("").splice(0, 3).join("");
-    // return ("Front is the first 3 chars is: " + strArray);
-    console.log(frontStr("hello", 5));
+function check(str, n) {
+
+    let newString = str.slice(0, 3);
+    let strInt = "";
+    for (let i = 0; i < n; i++) {
+      strInt += newString;
+    }
+    return strInt;
 }
 
-console.log(check("hello", 5));
+// console.log(check("hello", 5));
 
 
 // var str = "abcddsa";
