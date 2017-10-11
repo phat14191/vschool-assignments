@@ -3,8 +3,10 @@ import React from "react";
 function NameForm(props) {
   return (
     <div>
-      <input onChange={} type="text"/>
-      <h1>Hello</h1>
+      <input onChange = {props.handleChange}
+             type="text"
+      />
+      <h1>{props.name}</h1>
     </div>
   )
 }

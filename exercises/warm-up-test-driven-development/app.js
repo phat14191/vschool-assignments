@@ -9,15 +9,18 @@
 
 function check(str, n) {
 
-    let newString = str.slice(0, 3);
-    let strInt = "";
-    for (let i = 0; i < n; i++) {
-      strInt += newString;
-    }
-    return strInt;
+    // let newString = str.slice(0, 3);
+    // let strInt = "";
+    // for (let i = 0; i < n; i++) {
+    //   strInt += newString;
+    // }
+    // return strInt;
+
+    var strArray = str.split("").splice(0, 3).join("");
+    return strArray.repeat(n);
 }
 
-// console.log(check("hello", 5));
+console.log(check("hello", 5));
 
 
 // var str = "abcddsa";
