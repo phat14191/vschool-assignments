@@ -3,8 +3,9 @@ import SuperHero from "./SuperHero"
 import data from "./data.json"
 
 function genHeroes() {
-  return data.map((spot) => {
+  return data.map((spot, i) => {
     return <SuperHero
+            key = {i}
             spot = {spot}
             handleClick = {handleClick}
            />
@@ -15,9 +16,9 @@ function handleClick() {
   alert();
 }
 
-function App() {
+function App(props) {
   return (
-    <div>
+    <div key={props.i}>
       {genHeroes(data)}
     </div>
   )
