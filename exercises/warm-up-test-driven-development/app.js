@@ -25,4 +25,4 @@ function check(str, n) {
 // console.log(strArray);
 // console.log(typeof("hello"));
 
-module.export = check;
+module.exports = check;
