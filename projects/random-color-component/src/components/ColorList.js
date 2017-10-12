@@ -1,6 +1,5 @@
 import React from "react";
 import ColorComponent from "./ColorComponent";
-
 import axios from "axios";
 
 class ColorList extends React.Component {
@@ -26,10 +25,6 @@ class ColorList extends React.Component {
       console.log(response)
     })
   }
-  // this.setState({
-  //   colorList2: response.data.matching_color,
-  // })
-
   render(spot) {
     const styles = {
       height:"200px",
@@ -42,7 +37,7 @@ class ColorList extends React.Component {
       backgroundColor:`#${this.state.colorList2}`,
       textAlign:"center"
     }
-
+    
     return (
       <div>
         <div style={styles}>

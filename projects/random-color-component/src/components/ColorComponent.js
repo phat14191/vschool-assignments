@@ -5,7 +5,7 @@ function ColorComponent(props) {
     <div>
       <h1>Hello</h1>
       <h2>Refresh the page to have</h2>
-      <h1 style ={props.styles}>New Color</h1>
+      <h1>New Color</h1>
     </div>
   )
 }
