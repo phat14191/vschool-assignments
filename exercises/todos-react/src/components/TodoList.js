@@ -32,7 +32,7 @@ class TodoList extends React.Component {
       // console.log(response.data);
       this.setState(prevState => {
         return {
-          todos: [...prevState.todos, response.data]
+          todos: [response.data, ...prevState.todos,]
         }
       })
     });
@@ -71,14 +71,15 @@ class TodoList extends React.Component {
           name = "title"
           onChange = {this.handleChange}/>
 
-        {/* <input
+        <input
           type = "text"
           placeholeder = "Description"
           value = {this.state.newTodo.description}
           name = "description"
-          onChange = {this.handleChange}/> */}
+          onChange = {this.handleChange}/>
 
         <button onClick = {this.postTodo}>Add todo</button>
+
         {this.state.todos.map((item, i) => {
           return (
               <TodoItem
