@@ -12,5 +12,5 @@ describe("Adjacent Difference", () => {
     assert.notInclude(check(["something"]), undefined);
     assert.deepEqual(check(["something", "something else"]), ["somethi ng", "something else"]);
     assert.deepEqual(arrayFilter(["something"]), ["something"]);
-  })
+  });
 });
