@@ -2,6 +2,8 @@ import React from "react";
 import TodoItem from "./TodoItem"
 import axios from "axios";
 import { Button, FromGroup, FromControl } from "react-bootstrap";
+import { Row, Col} from "react-bootstrap";
+import TodoItemContainer from "./TodoItemContainer";
 
 class TodoList extends React.Component {
   constructor() {
@@ -51,6 +53,13 @@ class TodoList extends React.Component {
     });
   }
 
+  editTodo(id, editedTodo) {
+    axios.put(`https://api.vschool.io/phat/todo/${id}`, editedTodo).then((response) => {
+      //edit the todo in our current state
+
+    })
+  }
+
   handleChange(event) {
     // console.log(this.state);
     this.setState({
@@ -61,6 +70,7 @@ class TodoList extends React.Component {
         }
     })
   }
+
 
   render() {
     return (
@@ -80,7 +90,6 @@ class TodoList extends React.Component {
           onChange = {this.handleChange}/>
 
         <Button onClick = {this.postTodo}>Add todo</Button>
-
         {this.state.todos.map((item, i) => {
           return (
               <TodoItem
