@@ -1,6 +1,7 @@
 import React from "react";
 import TodoItem from "./TodoItem"
 import axios from "axios";
+import { Button, FromGroup, FromControl } from "react-bootstrap";
 
 class TodoList extends React.Component {
   constructor() {
@@ -78,7 +79,7 @@ class TodoList extends React.Component {
           name = "description"
           onChange = {this.handleChange}/>
 
-        <button onClick = {this.postTodo}>Add todo</button>
+        <Button onClick = {this.postTodo}>Add todo</Button>
 
         {this.state.todos.map((item, i) => {
           return (
