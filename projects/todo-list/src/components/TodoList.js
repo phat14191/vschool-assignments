@@ -20,10 +20,12 @@ class TodoList extends React.Component {
     });
   }
 
+  //need id ti pass so
   deleteTodo(id) {
-    axios.delete(`https://api.vschool.io/phat/todo/${id}`).then((response) => {
+    axios.delete(`https://api.vschool.io/phat/todo/${id}`).then(response => {
       this.setState(prevState => {
-        const newArray = prevState.todos.filter(item => item._id !== id)
+        //look at todos before and filter anything does not match require before
+          const newArray = prevState.todos.filter(e => e._id !== id)
         return {
           todos: newArray
         }
