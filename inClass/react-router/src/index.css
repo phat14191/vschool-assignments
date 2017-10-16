@@ -1,0 +1,13 @@
+.app-wrapper {
+  height: 100vh;
+}
+
+.nav{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 15px;
+}

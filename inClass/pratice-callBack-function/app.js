@@ -21,7 +21,7 @@ function some(arr, f){
 
 //axample
 let test = [1,2,3,4]
-functioncallback(num){
+function functioncallback(num){
 return typeof num === "number";
 }
 
@@ -29,4 +29,31 @@ function callback2(num) {
   return num%2 === 0
 }
 
-console.log(every([1,"2,3,4"], callback));
+console.log(every(test, callback2));
+
+
+//// review
+function map(arr, f) {
+  let output = [];
+  for(let i = 0; i < arr.length; i++) {
+    let newElement = f(arr[i], i);
+    output.push(newElement);
+    // output.push(f(arr[i], i));
+  }
+  return output;
+}
+
+let todoz = [
+{
+  title: "something",
+  description: "whatever"
+},
+{
+  title: "blah blah",
+  description: "derp a derp"
+}
+  ];
+
+  function(todo, index) {
+    return "<li>" + tido.title + ", " + todo.description + "</li>"
+  }
