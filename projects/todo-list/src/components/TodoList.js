@@ -6,9 +6,15 @@ class TodoList extends React.Component {
   constructor() {
     super();
     this.state = {
-      todos: []
+      todos: [],
+      //give them starting point
+      newTodo: {
+        title: "",
+        description: ""
+      }
     }
     this.deleteTodo = this.deleteTodo.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -33,9 +39,29 @@ class TodoList extends React.Component {
     })
   }
 
+  handleChange(event) {
+    console.dir(event.target);
+    this.setState({
+      newTodo: {
+        event.target.name: event.target.vavlue
+      }
+    })
+  }
+
   render() {
     return (
       <div>
+        <input
+          type="text"
+          placeholder="Title"
+          //need value is object
+          value={this.state.newTodo.title}
+          name="title"
+          onChange={this.handleChange}
+        />
+
+        <button>Add todo</button>
+
         {this.state.todos.map((item, i) => {
           return (
             <ListFrom
