@@ -7,10 +7,11 @@ function TodoItem(props) {
       <h2>{props.todo.description}</h2>
       <button onClick= {() => props.deleteTodo(props.todo._id)}> Delete </button>
       <div>
-        <form action="">
-          <input type="text" placeholder = "Edit Title"/>
-          <input type="text" placeholder = "Edit Description"/>
-          <button>Save</button>
+        <form onSubmit = {props.handleSubmit}>
+          <input onChange = {props.handleEdit} name="title" value ={props.editedTodo.title} type="text" placeholder = "Edit Title"/>
+
+          <input onChange = {props.handleEdit} name ="description" value ={props.editedTodo.description} type="text" placeholder = "Edit Description"/>
+          <button type="submit">Save</button>
         </form>
       </div>
       <hr/>

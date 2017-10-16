@@ -18,6 +18,7 @@ class TodoList extends React.Component {
     this.deleteTodo = this.deleteTodo.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.postTodo = this.postTodo.bind(this);
+    this.editTodo = this.editTodo.bind(this);
   }
 
   componentDidMount() {
@@ -56,7 +57,21 @@ class TodoList extends React.Component {
   editTodo(id, editedTodo) {
     axios.put(`https://api.vschool.io/phat/todo/${id}`, editedTodo).then((response) => {
       //edit the todo in our current state
-
+      let newEdit = response.data;
+      this.setState((prevState) => {
+          //newTodos match id simply return editedTodo looping enties that array
+        const newTodos = prevState.todos.map((todo) => {
+          if(todo._id === id) {
+            return newEdit
+          } else {
+            return todo;
+          }
+        })
+        return {
+          ...prevState,
+          todos: newTodos
+        }
+      })
     })
   }
 
@@ -96,6 +111,7 @@ class TodoList extends React.Component {
                 todo = {item}
                 key = {item.title + i}
                 deleteTodo = {this.deleteTodo}
+                editTodo = {this.editTodo}
               />
           )
         })}
