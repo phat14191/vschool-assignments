@@ -1,6 +1,12 @@
 import React from "react";
 
+import {connect} from "react-redux";
+import {dispatch} from "redux";
+import {addOne} from "../redux/actions/index.js";
+
+
 function Counter(props) {
+  console.log(props);
   const styles = {
     width: "15%",
     margin: "auto",
@@ -14,11 +20,24 @@ function Counter(props) {
   }
   return (
     <div style = {styles}>
-      <button>+</button>
-      <span>0</span>
+      <button onClick = {props.addOne}>+</button>
+      <span>{props.counter}</span>
       <button>-</button>
     </div>
   )
 }
 
-export default Counter;
+
+//connect the dispatch with our action creator
+//connect takes action(s) it passes them down to the component via props
+//automaticaly cals the dispatch when thos actions get called
+
+//connectvtakes two arguments, first is what we want from state as props,
+//second is the set of action creators we want to dispatch from this component
+
+const mapStateToProps = (state) => {
+  return state;
+}
+
+export default connect(mapStateToProps, {addOne})(Counter);
+                        //{addOne: addOne}
