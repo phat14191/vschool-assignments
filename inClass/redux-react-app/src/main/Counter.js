@@ -2,7 +2,7 @@ import React from "react";
 
 import {connect} from "react-redux";
 import {dispatch} from "redux";
-import {addOne} from "../redux/actions/index.js";
+import {addOne, minusOne} from "../redux/actions/index.js";
 
 
 function Counter(props) {
@@ -22,7 +22,7 @@ function Counter(props) {
     <div style = {styles}>
       <button onClick = {props.addOne}>+</button>
       <span>{props.counter}</span>
-      <button>-</button>
+      <button onClick = {props.minusOne}>-</button>
     </div>
   )
 }
@@ -39,5 +39,5 @@ const mapStateToProps = (state) => {
   return state;
 }
 
-export default connect(mapStateToProps, {addOne})(Counter);
-                        //{addOne: addOne}
+export default connect(mapStateToProps, {addOne, minusOne})(Counter);
+                                        //{addOne: addOne}

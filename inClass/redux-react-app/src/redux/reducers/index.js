@@ -8,6 +8,10 @@ const reducer = function(prevState = state, action) {
       return {
         counter: prevState.counter + 1
       }
+    case "MINUS_ONE":
+      return {
+        counter: prevState.counter - 1
+      }
     default:
       return prevState
   }

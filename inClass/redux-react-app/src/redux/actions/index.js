@@ -3,3 +3,9 @@ export function addOne() {
     type: "ADD_ONE"
   }
 }
+
+export function minusOne() {
+  return {
+    type: "MINUS_ONE"
+  }
+}
