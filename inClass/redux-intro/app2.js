@@ -7,39 +7,19 @@ const state = {
 }
 
 //tell this patcher add one
-function addOne() {
+function custom(num) {
   return {
-    type: "ADD_ONE",
+    type: "CUSTOM",
+    value: num,
   };
 }
 
-//function subtract - 1
-function subOne() {
-  return {
-    type: "SUB_ONE",
-  };
-}
-//reset
-function reset() {
-  return {
-    type: "RESET",
-  };
-}
 //take action take prevState also take action
 function reducer(prevState = state, action) { //prevState = state get it know what is the initial state is
   switch(action.type) {
-    case "ADD_ONE":
+    case "CUSTOM":
       return {
-        counter: prevState.counter + 1
-      }
-    case "SUB_ONE":
-      return {
-        counter: prevState.counter - 1
-        // < 0 ? 0 : prevState.counter -1
-      }
-    case "RESET":
-      return {
-        counter: prevState.counter = 0
+        counter: prevState.counter + action.value
       }
     default:
       return prevState;
@@ -56,11 +36,5 @@ store.subscribe(() => {
 
 
 // thispatch is method on store
-store.dispatch(addOne());
-store.dispatch(addOne());
 
-store.dispatch(subOne());
-store.dispatch(subOne());
-store.dispatch(subOne());
-
-store.dispatch(reset());
+store.dispatch(custom(20));
