@@ -13,6 +13,7 @@ class App extends React.Component {
       <div className = "app-wrapper">
         <Navbar />
         <Switch>
+          {/* exact checking the patch name url exact string, let them know they working the same */}
           <Route exact path = "/" component = {Home}/>
           <Route path = "/about" component = {About}/>
           <Route path = "/contact" component = {Contact}/>

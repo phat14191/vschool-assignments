@@ -21,6 +21,7 @@ function ServicesComponent(props) {
       </div>
       <div>
         <Switch>
+              {/* url systax :id need to remember */}
           <Route path ="/services/:id" render = {(props) => {
 
             return (

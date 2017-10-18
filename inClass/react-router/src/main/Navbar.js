@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 function Navbar(props) {
     return (
       <div className = "nav">
+        {/* link set up patch name */}
         <Link to = "/">Home</Link>
         <Link to = "/about">About Us</Link>
         <Link to = "/contact">Contact</Link>

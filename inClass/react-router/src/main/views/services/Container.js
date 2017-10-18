@@ -1,6 +1,11 @@
 import React from "react";
 import ServicesComponent from "./Component";
 import {Link} from "react-router-dom";
+import axios from "axios";
+const pokeUrl = "http://pokeapi.co/api/v2/pokemon?litmit=150";
+axios.request.interceptors.use((config) => {
+  config.headers["Access-Control-Allow-Origin"]
+})
 
 class ServicesContainer extends React.Component {
   constructor() {
@@ -13,21 +18,28 @@ class ServicesContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      services: [
+    // this.setState({
+    //   services: [
+    //
+    //     {title: "mow lawn",
+    //      price: 50,
+    //      _id: "2387we8fbr8f"},
+    //
+    //     {title: "rake leaves",
+    //     price: 200,
+    //     _id: "1387we8fbr9f"},
+    //
+    //     {title: "yoga lesson",
+    //     price: 500,
+    //     _id: "0787wd8fbr2f"}
+    //   ]
+    // })
+    this.loadData();
+  }
 
-        {title: "mow lawn",
-         price: 50,
-         _id: "2387we8fbr8f"},
-
-        {title: "rake leaves",
-        price: 200,
-        _id: "1387we8fbr9f"},
-
-        {title: "yoga lesson",
-        price: 500,
-        _id: "0787wd8fbr2f"}
-      ]
+  loadData() {
+    axios.get(`https://cors.vschool.io?=${pokeUrl}`).then((response) => {
+      console.log(response.data);
     })
   }
 
