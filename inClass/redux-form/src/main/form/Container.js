@@ -1,6 +1,9 @@
 import React from "react";
 import FormComponent from "./Component";
 
+import {connect} from "react-redux";
+import {countries} from "../../redux/actions";
+
 class FormContainer extends React.Component {
   constructor() {
     super();
@@ -29,6 +32,7 @@ class FormContainer extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    this.props.addCountry(this.state.inputs);
     alert(JSON.stringify(this.state.inputs));
      //add Country function gets called here
      this.setState({
@@ -53,7 +57,7 @@ class FormContainer extends React.Component {
   }
 }
 
-export default FormContainer;
+export default connect(null, countries)(FormContainer);
 
 //handle changes in the input
 //handle submission of info
