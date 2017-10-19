@@ -10,6 +10,7 @@ function ContactList(props) {
   console.log(props);
   return (
     <div style = {style}>
+      <button>Remove Contact</button>
       {props.contactList.map((contact, i) => {
         return (
           <Contact
@@ -23,7 +24,7 @@ function ContactList(props) {
 }
 
 const mapStateToProps = (state) => {
-  return state
+  return {contactList: state.contactList}
 }
 
 export default connect(mapStateToProps, {})(ContactList);

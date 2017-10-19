@@ -29,6 +29,7 @@ const reducer = function(prevState = state, action) {
       }
     case "MINUS_ONE":
       return {
+        ...prevState,
         counter: prevState.counter - 1
       }
     default:

@@ -16,7 +16,7 @@ function Counter(props) {
     top: "50%",
     transform : "translateY(-50%)",
     fontSize: "120px",
-    marginTop: "400px"
+    marginTop: "100px"
   }
   return (
     <div style = {styles}>

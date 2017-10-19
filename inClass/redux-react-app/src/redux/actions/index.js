@@ -9,3 +9,9 @@ export function minusOne() {
     type: "MINUS_ONE"
   }
 }
+
+export function removeFirst() {
+  return {
+    type: "REMOVE_FIRST"
+  }
+}
