@@ -33,7 +33,7 @@ class FormContainer extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.addCountry(this.state.inputs);
-    alert(JSON.stringify(this.state.inputs));
+    // alert(JSON.stringify(this.state.inputs));
      //add Country function gets called here
      this.setState({
        inputs: {
@@ -44,8 +44,10 @@ class FormContainer extends React.Component {
   }
 
   render(){
+    // console.log(this.props);
     // console.log(this.state.inputs);
     return (
+
       <div>
         <FormComponent
             handleChange = {this.handleChange}
