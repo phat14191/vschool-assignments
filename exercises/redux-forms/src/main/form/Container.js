@@ -30,7 +30,7 @@ class FromContainer extends React.Component {
   }
 
   handleSubmit(e){
-    console.log(this.state.inputs);
+    // console.log(this.state.inputs);
     // alert(JSON.stringify(this.state.inputs));
     e.preventDefault();
     this.props.addCountry(this.state.inputs);
@@ -43,7 +43,7 @@ class FromContainer extends React.Component {
   }
 
   render() {
-    console.log(this.state.inputs)
+    // console.log(this.props)
     return(
       <FormComponent
         handleChange = {this.handleChange}
