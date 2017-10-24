@@ -58,7 +58,7 @@ class FormContainer extends React.Component {
     )
   }
 }
-
+// se lay state cua redux map trong Component
 export default connect(null, countries)(FormContainer);
 
 //handle changes in the input
