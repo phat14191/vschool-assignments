@@ -1,4 +1,4 @@
-function mul(a, b) {
+function exp(a, b) {
   console.log(Math.pow(a, b));
 }
 
