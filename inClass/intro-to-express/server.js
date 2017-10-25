@@ -18,6 +18,8 @@ app.use(bodyParser.json());
 // will take object punch of
 
 app.get("/tacos", (request, response) => {
+  // console.log(request.query)
+  // filter the response based on the query object
   response.send(tacos);
 });
 
@@ -89,7 +91,7 @@ app.get("/tacos/:id", (request, response) => {
       return false;
     }
   });
-  res.send(taco);
+  response.send(taco);
 })
 
 app.listen(8000, () => {
