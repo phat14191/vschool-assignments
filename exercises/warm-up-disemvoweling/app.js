@@ -23,25 +23,33 @@
 //
 // console.log(findVowels("Pickle Rick!"));
 
-const disemvowel = function(str) {
-  let output = {
-    str: "",
-    vowels: ""
-  }
-  let vowels = "aeiou";
-  for(let i = 0; i < str.length; i++) {
-    if(vowels.includes(str[i])) {
-      output.vowels += str[i];
-    } else if(str[i].match(/\s/)) {
-      continue;
-    } else {
-      output.str += str[i];
-    }
-  }
-  return output;
+// const disemvowel = function(str) {
+//   let output = {
+//     str: "",
+//     vowels: ""
+//   }
+//   let vowels = "aeiou";
+//   for(let i = 0; i < str.length; i++) {
+//     if(vowels.includes(str[i])) {
+//       output.vowels += str[i];
+//     } else if(str[i].match(/\s/)) {
+//       continue;
+//     } else {
+//       output.str += str[i];
+//     }
+//   }
+//   return output;
+// }
+
+function disemvowel(str){
+  newObj = {}
+  const noVowels = str.replace(/[aeiou\s/]/gi,'');
+  const vowels = str.replace(/[^aeiou]/gi, '');
+  newObj.str = noVowels.toLowerCase();
+  newObj.vowels = vowels.toLowerCase();
+  console.log(newObj)
+  return newObj;
 }
-
-
 //
 // disemvowel("Pickle Rick!")
 // console.log(disemvowel("test"));
