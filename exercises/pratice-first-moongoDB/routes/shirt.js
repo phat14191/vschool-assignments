@@ -50,7 +50,24 @@ shirtRoutes.post("/", (req, res) => {
   });
 });
 
-// shirtRoutes.put()
+shirtRoutes.put("/:id", (req, res) => {
+  //findByIdAndUpdate going to take more parraneter
+            //find find, second
+  Shirt.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, shirt) => {
+    if (err) return res.status(500).send(err);
+    return res.send(shirt);
+  });
+  // Shirt.findById(req.params.id, (err, shirt) => {
+  //   if (err) return res.status(500).send(err);
+  //   shirt.character = req.body.character || shirt.character
+  //   shirt.price = req.body.price;
+  //
+  //   shirt.save((err, shirt) => {
+  //     if (err) return res.status(500).send(err);
+  //     return res.send(shirt);
+  //   });
+  // });
+});
 
 shirtRoutes.delete("/:id", (req, res) => {
   Shirt.findByIdAndRemove(req.params.id, (err, shirt) => {
