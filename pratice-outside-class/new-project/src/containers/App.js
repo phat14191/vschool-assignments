@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Radium from "radium";
-import Person from "./Person/Person";
+import Person from "../components/Persons/Person";
 
 class App extends Component {
   state = {
@@ -30,6 +29,7 @@ class App extends Component {
     const person = {
       ...this.state.persons[personIndex]
     };
+
     //const person = Object.assign({}, this.state.person[personIndex])
 
     person.name = event.target.value;
@@ -51,11 +51,7 @@ class App extends Component {
       font: "inherit",
       border: "1x solid blue",
       padding: "8px",
-      cursor: "pointer",
-      ":hover": {
-        backgroundColor: "lightgreen",
-        color: "black"
-      }
+      cursor: "pointer"
     };
 
     let persons = null;
@@ -76,10 +72,6 @@ class App extends Component {
         </div>
       );
       style.backgroundColor = "red";
-      style[":hover"] = {
-        backgroundColor: "lightred",
-        color: "black"
-      }
     }
 
     const classes = [];
@@ -92,17 +84,17 @@ class App extends Component {
 
 
     return (
-      <div className="App">
-        <h1>Hi, I'm a React App</h1>
-        <p className={classes.join(" ")}>This is really working!</p>
-        <button
-         style ={style}
-         onClick={this.togglePersonsHandler}>Switch Name</button>
-        {persons}
-      </div>
+        <div className="App">
+          <h1>Hi, I'm a React App</h1>
+          <p className={classes.join(" ")}>This is really working!</p>
+          <button
+          style ={style}
+          onClick={this.togglePersonsHandler}>Switch Name</button>
+          {persons}
+        </div>
     );
     // return React.createElement("div", null, React.createElement("h1", null, "alosdas"))
   }
 }
 
-export default Radium(App);
+export default App;
